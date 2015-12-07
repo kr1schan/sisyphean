@@ -1,0 +1,13 @@
+<template name="task">
+  <li class="collection-item avatar">
+    <div>
+    {{#if isDone status}}
+      <i class="mdi-action-done circle green toggle-checked"></i>
+    {{else}}
+      <i class="mdi-action-assignment circle orange toggle-checked"></i>
+    {{/if}}
+    <p>{{ name }}</p>
+    <p>{{ remaining }}</p>
+  </div>
+  </li>
+</template>

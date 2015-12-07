@@ -1,2 +1,9 @@
+push.sh
+server/email/config.js
+.idea
 .meteor/local
-.meteor/meteorite
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+dump
+settings.json

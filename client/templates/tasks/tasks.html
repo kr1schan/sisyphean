@@ -1,0 +1,16 @@
+<template name="tasks">
+  <div class="template-tasks">
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating btn-large red" href="{{pathFor 'tasks.new'}}"><i class="mdi-content-add"></i></a>
+    </div>
+    <h1>Tasks</h1>
+
+    <ul class="collection">
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+
+
+</template>

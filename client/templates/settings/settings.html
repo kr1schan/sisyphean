@@ -1,0 +1,24 @@
+<template name="settings">
+  <h3>Benutzer Einstellungen</h3>
+  <div class="row">
+    <form class="col s12 user-settings">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="userEmail" name="userEmail" type="email" class="validate" value="{{ userEmail }}">
+          <label for="userEmail" class="active">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="userName" type="text" class="validate" value="{{ userName }}">
+          <label for="userName" class="{{#if hasUserName}}active{{/if}}">Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light" type="submit" name="action">EInstellungen Übernehmen
+        </button>
+      </div>
+    </form>
+  </div>
+  <h3>Gruppen Einstellungen</h3>
+</template>
